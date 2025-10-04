@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact GABREL</title>
+    <!-- Google Font: Montserrat Bold -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="me.css" />
+    <link rel="icon" type="image/png" href="gabrelPFP.png" />
+  </head>
+  <body>
+    <!-- Pop-up message for form validation -->
+    <div class="popup" id="popup">
+      Oops! All fields are required. Please fill them out.
+    </div>
+
+    <!-- Twinkling stars background -->
+    <canvas id="stars"></canvas>
+
+    <!-- Main contact form wrapper -->
+    <div class="contact">
+      <!-- Top rectangle with 'Contact Me' and profile image -->
+      <div class="contact__header">
+        <h1 class="contact__title">Contact Me</h1>
+        <img
+          src="gabrelPFP.png"
+          alt="Profile Image"
+          class="contact__profile"
+        />
+      </div>
+
+      <!-- Contact form -->
+      <form
+        class="contact__form"
+        id="contactForm"
+        action="https://formspree.io/f/xjkaobra"
+        method="POST"
+      >
+        <div class="contact__inputs">
+          <!-- First name -->
+          <input
+            type="text"
+            placeholder="First Name"
+            name="firstName"
+            class="contact__input"
+            required
+          />
+          <!-- Last name -->
+          <input
+            type="text"
+            placeholder="Last Name"
+            name="lastName"
+            class="contact__input"
+            required
+          />
+        </div>
+        <!-- Email -->
+        <input
+          type="email"
+          placeholder="Email"
+          name="email"
+          class="contact__input contact__input--full"
+          required
+        />
+        <!-- Message -->
+        <textarea
+          placeholder="Message"
+          name="message"
+          class="contact__textarea"
+          required
+        ></textarea>
+        <!-- Send message button -->
+        <button type="submit" class="contact__button">Send Message</button>
+      </form>
+
+      <!-- Social icons -->
+      <div class="contact__socials">
+        <a
+          href="https://x.com/GREATGABREL"
+          target="_blank"
+          class="contact__social"
+        >
+          <img
+            src="twitter.jpg"
+            alt="Twitter"
+          />
+        </a>
+        <a
+          href="https://discord.com/users/1318830806008856658"
+          target="_blank"
+          class="contact__social"
+        >
+          <img
+            src="discord.jpg"
+            alt="Discord"
+          />
+        </a>
+        <a href="https://t.me/GREATGABREL" target="_blank" class="contact__social">
+          <img
+            src="telegram.jpg"
+            alt="Telegram"
+          />
+        </a>
+      </div>
+    </div>
+
+    <script src="me.js"></script>
+  </body>
+</html>
